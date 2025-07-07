@@ -1,4 +1,5 @@
-import type { Items } from '../App';
+import type { Items } from '../types/Item';
+import { Link } from '@tanstack/react-router';
 
 type ItemProps = {
   item: Items[number];
@@ -6,10 +7,12 @@ type ItemProps = {
 
 const Item = ({ item }: ItemProps) => {
   return (
-    <div key={item.id}>
-      <img alt={item.name} src={item.shop_image} />
-      <p>{item.name}</p>
-    </div>
+    <Link to="/item/$itemId" params={{ itemId: String(item.id) }}>
+      <div key={item.id}>
+        <img alt={item.name} src={item.shop_image} />
+        <p>{item.name}</p>
+      </div>
+    </Link>
   );
 };
 

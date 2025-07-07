@@ -1,4 +1,4 @@
-import type { Items } from '../App';
+import type { Items } from '../types/Item';
 import { Item } from './Item';
 import { filterItemsByTier } from '../util/filterItemsByTier';
 
