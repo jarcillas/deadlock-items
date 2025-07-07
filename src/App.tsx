@@ -1,6 +1,9 @@
 // import { useItems } from './hooks/useItems';
 
 import { items } from './data/shopItems.json';
+import { ItemGroup } from './components/ItemGroup';
+
+export type Items = typeof items;
 
 function App() {
   // const { items, loading } = useItems(
@@ -20,12 +23,6 @@ function App() {
   );
   const spiritItems = items.filter((item) => item.item_slot_type === 'spirit');
 
-  type ItemsArray = typeof items;
-
-  const filterItemsByTier = (items: ItemsArray, tier: number) => {
-    return items.filter((item) => item.item_tier === tier);
-  };
-
   console.log('item count: ', items.length);
 
   return (
@@ -33,155 +30,9 @@ function App() {
       <h1 className="py-4 text-4xl font-bold uppercase">Deadlock Items</h1>
 
       <div className="grid grid-cols-3 gap-x-8 text-xs w-full">
-        <div>
-          <h2 className="text-lg font-bold">Gun Items</h2>
-          <div className="flex flex-col gap-y-6 mt-4">
-            <div>
-              <h3 className="text-base">Tier 1</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(gunItems, 1).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 2</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(gunItems, 2).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 3</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(gunItems, 3).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 4</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(gunItems, 4).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h2 className="text-lg font-bold">Vitality Items</h2>
-          <div className="flex flex-col gap-y-6 mt-4">
-            <div>
-              <h3 className="text-base">Tier 1</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(vitalityItems, 1).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 2</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(vitalityItems, 2).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 3</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(vitalityItems, 3).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 4</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(vitalityItems, 4).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h2 className="text-lg font-bold">Spirit Items</h2>
-          <div className="flex flex-col gap-y-6 mt-4">
-            <div>
-              <h3 className="text-base">Tier 1</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(spiritItems, 1).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 2</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(spiritItems, 2).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 3</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(spiritItems, 3).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-base">Tier 4</h3>
-              <div className="pt-4 grid grid-cols-4 gap-2">
-                {filterItemsByTier(spiritItems, 4).map((item) => (
-                  <div key={item.id}>
-                    <img alt={item.name} src={item.shop_image} />
-                    <p>{item.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        <ItemGroup items={gunItems} />
+        <ItemGroup items={vitalityItems} />
+        <ItemGroup items={spiritItems} />
       </div>
     </div>
   );
