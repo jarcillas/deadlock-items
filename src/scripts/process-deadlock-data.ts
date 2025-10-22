@@ -30,10 +30,13 @@ interface ShopItemSection {
 interface ShopItemSectionAttribute {
   loc_string: string;
   properties: ShopItemProperty[];
+  elevated_properties?: ShopItemProperty[];
+  important_properties?: Array<ShopItemProperty | ImportantPropertyWithIcon>;
+  // important_properties_with_icon?: ImportantPropertyWithIcon[];
 }
 
 interface ShopItemProperty {
-  value: string;
+  value?: string;
   label?: string;
   icon?: string;
 }
@@ -49,8 +52,33 @@ interface TooltipSection {
 }
 
 interface TooltipSectionAttribute
-  extends Omit<ShopItemSectionAttribute, 'properties'> {
+  extends Omit<
+    ShopItemSectionAttribute,
+    | 'properties'
+    | 'elevated_properties'
+    | 'important_properties'
+    | 'important_properties_with_icon'
+  > {
   properties: string[];
+  elevated_properties?: string[];
+  important_properties?: string[];
+  important_properties_with_icon?: ImportantPropertyWithIcon[];
+}
+
+interface ImportantPropertyWithIcon {
+  name: string;
+  icon: string;
+  localized_name: string;
+}
+
+function getPropertyValues(
+  propertyString: string,
+  propertiesObj: { [key: string]: ShopItemProperty }
+) {
+  return {
+    name: propertyString,
+    ...propertiesObj[propertyString],
+  };
 }
 
 async function processData() {
@@ -76,15 +104,30 @@ async function processData() {
           };
           if (Object.hasOwn(tooltipSection, 'section_type'))
             section.section_type = tooltipSection.section_type;
+          else section.section_type = 'standard';
           tooltipSection.section_attributes?.forEach((attr) => {
             section.section_attributes.push({
               loc_string: attr.loc_string,
-              properties: attr.properties?.map((propertyString: string) => {
-                return {
-                  name: propertyString,
-                  ...item?.properties[propertyString],
-                };
-              }),
+              properties: attr.properties?.map((propertyString: string) =>
+                getPropertyValues(propertyString, item.properties)
+              ),
+              elevated_properties: attr.elevated_properties?.map(
+                (propertyString: string) =>
+                  getPropertyValues(propertyString, item.properties)
+              ),
+              important_properties: attr.important_properties?.map(
+                (propertyString: string) => {
+                  const importantPropertyWithIcon =
+                    attr.important_properties_with_icon?.find(
+                      (prop) => prop.name === propertyString
+                    );
+                  if (importantPropertyWithIcon)
+                    return importantPropertyWithIcon;
+                  return {
+                    ...getPropertyValues(propertyString, item.properties),
+                  };
+                }
+              ),
             });
           });
           return section;
