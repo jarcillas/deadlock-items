@@ -284,7 +284,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_non_player_bonus"
+    ]
   },
   {
     "id": 811521119,
@@ -528,7 +531,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_chain_lightning"
+    ]
   },
   {
     "id": 2678489038,
@@ -1875,7 +1881,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_spirit_sap"
+    ]
   },
   {
     "id": 1113837674,
@@ -2593,7 +2602,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_long_range"
+    ]
   },
   {
     "id": 4053935515,
@@ -2738,7 +2750,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_headshot_booster"
+    ]
   },
   {
     "id": 4075861416,
@@ -2878,7 +2893,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_tech_defense_shredders"
+    ]
   },
   {
     "id": 3884003354,
@@ -2977,7 +2995,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_headshot_booster2"
+    ]
   },
   {
     "id": 395867183,
@@ -3230,7 +3251,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_close_range"
+    ]
   },
   {
     "id": 3696726732,
@@ -3646,7 +3670,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_debuff_reducer"
+    ]
   },
   {
     "id": 2163598980,
@@ -3939,7 +3966,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_endurance"
+    ]
   },
   {
     "id": 3585132399,
@@ -4023,7 +4053,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_health"
+    ]
   },
   {
     "id": 865846625,
@@ -4121,7 +4154,11 @@
         "section_type": "innate"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_vampire",
+      "upgrade_health_stealing_magic"
+    ]
   },
   {
     "id": 3399065363,
@@ -4285,7 +4322,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_sprint_booster"
+    ]
   },
   {
     "id": 2447176615,
@@ -4356,7 +4396,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_sprint_booster"
+    ]
   },
   {
     "id": 334300056,
@@ -4417,7 +4460,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_improved_stamina"
+    ]
   },
   {
     "id": 668299740,
@@ -5145,7 +5191,10 @@
         "section_type": "innate"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_improved_spirit"
+    ]
   },
   {
     "id": 2226497419,
@@ -5434,7 +5483,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_magic_reach"
+    ]
   },
   {
     "id": 754480263,
@@ -5894,7 +5946,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_magic_burst"
+    ]
   },
   {
     "id": 2081037738,
@@ -6269,7 +6324,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_magic_vulnerability"
+    ]
   },
   {
     "id": 787198704,
@@ -6326,7 +6384,10 @@
         "section_type": "innate"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_extra_charge"
+    ]
   },
   {
     "id": 380806748,
@@ -6415,7 +6476,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_magic_tempo"
+    ]
   },
   {
     "id": 1813726886,
@@ -7012,7 +7076,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_withering_whip"
+    ]
   },
   {
     "id": 1804594021,
@@ -7157,7 +7224,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_health_stimpak"
+    ]
   },
   {
     "id": 3144988365,
@@ -7935,7 +8005,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_containment"
+    ]
   },
   {
     "id": 677738769,
@@ -8627,7 +8700,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_health_stimpak"
+    ]
   },
   {
     "id": 2059712766,
@@ -8973,7 +9049,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_health_stealing_magic"
+    ]
   },
   {
     "id": 857669956,
@@ -9231,7 +9310,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_guardian_ward"
+    ]
   },
   {
     "id": 1932939246,
@@ -9749,7 +9831,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_improved_stamina"
+    ]
   },
   {
     "id": 1150006784,
@@ -9886,7 +9971,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_improved_stamina"
+    ]
   },
   {
     "id": 3357231760,
@@ -9979,7 +10067,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_debuff_reducer"
+    ]
   },
   {
     "id": 2407781327,
@@ -10138,7 +10229,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_health"
+    ]
   },
   {
     "id": 1976391348,
@@ -10385,7 +10479,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_cold_front"
+    ]
   },
   {
     "id": 2533252781,
@@ -10711,7 +10808,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_arcane_extension"
+    ]
   },
   {
     "id": 365620721,
@@ -10907,7 +11007,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_vampire"
+    ]
   },
   {
     "id": 1055679805,
@@ -11057,7 +11160,10 @@
         "section_type": "active"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_vampire"
+    ]
   },
   {
     "id": 1252627263,
@@ -11166,7 +11272,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_lifestrike_gauntlets"
+    ]
   },
   {
     "id": 465043967,
@@ -11397,7 +11506,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_acolytes_glove"
+    ]
   },
   {
     "id": 26002154,
@@ -11675,7 +11787,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_melee_charge"
+    ]
   },
   {
     "id": 2820116164,
@@ -11925,7 +12040,10 @@
         "section_type": "standard"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_mystic_regeneration"
+    ]
   },
   {
     "id": 2519598785,
@@ -11994,7 +12112,10 @@
         "section_type": "innate"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_soaring_spirit"
+    ]
   },
   {
     "id": 2739107182,
@@ -12115,7 +12236,10 @@
         "section_type": "standard"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_rapid_rounds"
+    ]
   },
   {
     "id": 2829638276,
@@ -12248,7 +12372,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_improved_spirit"
+    ]
   },
   {
     "id": 1925087134,
@@ -12524,7 +12651,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_quick_silver"
+    ]
   },
   {
     "id": 2407033488,
@@ -12703,7 +12833,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_clip_size"
+    ]
   },
   {
     "id": 4104549924,
@@ -12761,7 +12894,10 @@
         "section_type": "innate"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_rapid_rounds"
+    ]
   },
   {
     "id": 865958998,
@@ -13130,7 +13266,10 @@
         "section_type": "innate"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_clip_size"
+    ]
   },
   {
     "id": 3647584222,
@@ -13741,7 +13880,10 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "spirit"
+    "item_slot_type": "spirit",
+    "component_items": [
+      "upgrade_magic_slow"
+    ]
   },
   {
     "id": 3028234315,
@@ -13945,7 +14087,10 @@
         "section_type": "standard"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_healing_booster"
+    ]
   },
   {
     "id": 673001892,
@@ -13995,7 +14140,10 @@
         "section_type": "standard"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_high_velocity_mag"
+    ]
   },
   {
     "id": 3491236900,
@@ -14269,7 +14417,10 @@
         "section_type": "standard"
       }
     ],
-    "item_slot_type": "vitality"
+    "item_slot_type": "vitality",
+    "component_items": [
+      "upgrade_cardio_calibrator"
+    ]
   },
   {
     "id": 2221211450,
@@ -14642,6 +14793,9 @@
         "section_type": "passive"
       }
     ],
-    "item_slot_type": "weapon"
+    "item_slot_type": "weapon",
+    "component_items": [
+      "upgrade_high_velocity_mag"
+    ]
   }
 ]

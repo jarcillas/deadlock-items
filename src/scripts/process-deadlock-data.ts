@@ -20,6 +20,7 @@ interface ProcessedShopItem {
   image_webp: string;
   sections: ShopItemSection[];
   item_slot_type: 'weapon' | 'vitality' | 'spirit';
+  component_items: string[];
 }
 
 interface ShopItemSection {
@@ -96,6 +97,7 @@ async function processData() {
           image,
           image_webp,
           item_slot_type,
+          component_items,
         } = item;
 
         const sections = item.tooltip_sections?.map((tooltipSection) => {
@@ -142,6 +144,7 @@ async function processData() {
           image_webp,
           sections,
           item_slot_type,
+          component_items,
         };
       }
     );
